@@ -1,0 +1,292 @@
+:root{
+  --bg:#ffffff;
+  --fg:#111111;
+  --muted:#666;
+  --accent:#0f6fec;
+  --container:880px;
+  --card:#ffffff;        /* Bloques sobre fondo blanco */
+  --border:#e6e8eb;
+}
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+
+/* Tipografía y base */
+body{
+  font-family:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--fg);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  font-size:16px;
+}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 18px;
+}
+
+/* --- ENCABEZADO PERSONAL --- */
+.author-header{
+  background:#ffffff;
+  border-bottom:1px solid var(--border);
+  padding:48px 0;
+}
+
+.author-grid{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  flex-wrap:wrap;
+}
+
+.author-photo{
+  width:120px;height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid var(--accent);
+  box-shadow:0 0 12px rgba(0,0,0,0.1);
+}
+
+.author-info h2{
+  margin:0 0 4px;
+  font-size:1.6rem;
+  font-weight:700;
+  letter-spacing:-0.01em;
+  font-family:'Orbitron',system-ui,sans-serif;
+}
+
+.author-role{
+  margin:0 0 10px;
+  color:var(--muted);
+  font-size:1rem;
+}
+
+.author-links a{
+  display:inline-block;
+  margin-right:16px;
+  font-weight:500;
+  color:var(--accent);
+  text-decoration:none;
+  transition:opacity .2s ease;
+}
+.author-links a:hover{opacity:.8;}
+
+@media (max-width:600px){
+  .author-grid{justify-content:center;text-align:center;}
+  .author-photo{width:100px;height:100px;}
+}
+
+/* --- SELECTOR DE IDIOMA (botón + menú) --- */
+.author-header{ position:relative; }
+
+.lang-switcher{
+  position:absolute;
+  top:20px;
+  right:24px;
+}
+
+.lang-switcher button{
+  background:var(--card);
+  border:1px solid var(--border);
+  color:var(--fg);
+  padding:6px 12px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  font-family:inherit;
+  transition:background .2s ease;
+}
+.lang-switcher button:hover{ background:var(--accent); color:#fff; }
+
+.lang-menu{
+  display:none;
+  position:absolute;
+  right:0;
+  margin-top:6px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,.15);
+  z-index:10;
+}
+.lang-menu.visible{ display:block; }
+.lang-menu a{
+  display:block;
+  padding:8px 16px;
+  color:var(--fg);
+  text-decoration:none;
+  transition:background .2s ease;
+}
+.lang-menu a:hover{ background:var(--accent); color:#fff; }
+
+/* --- CABECERA DEL LEXICON --- */
+.site-header{
+  padding:56px 0 28px;
+  border-bottom:1px solid var(--border);
+  background:#ffffff;
+  text-align:center;
+}
+.site-header h1{
+  font-family:'Orbitron',system-ui,sans-serif;
+  font-weight:800;
+  letter-spacing:-0.02em;
+  margin:0 0 8px;
+  font-size:2.6rem;
+}
+.subtitle{
+  margin:0;
+  color:var(--muted);
+  font-weight:400;
+  font-size:1.05rem;
+}
+
+/* --- TABLA DE CONTENIDOS --- */
+.toc{
+  margin:24px auto;
+  padding:16px;
+  border:1px solid var(--border);
+  background:#ffffff;
+  border-radius:10px;
+  font-size:.95rem;
+}
+.toc strong{ display:block; margin-bottom:6px; }
+.toc ol{ margin:8px 0 0 18px; }
+.toc a{ color:var(--accent); text-decoration:none; }
+.toc a:hover{ text-decoration:underline; }
+
+/* --- CONTENIDO PRINCIPAL --- */
+.content{ padding:12px 0 64px; }
+.content h2{
+  margin-top:42px;
+  margin-bottom:10px;
+  border-bottom:1px solid var(--border);
+  padding-bottom:6px;
+  font-family:'Orbitron',system-ui,sans-serif;
+  font-size:1.6rem;
+}
+.content p,.content li{
+  max-width:78ch;
+  margin-bottom:12px;
+  font-family:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+.content ol,.content ul{ margin-left:20px; }
+.content li{ margin-bottom:6px; }
+.content code{
+  background:#fafafa;
+  padding:2px 6px;
+  border-radius:6px;
+  font-family:monospace;
+  border:1px solid var(--border);
+}
+
+/* --- SUBTÍTULOS (h3) --- */
+.content h3{
+  margin-top:42px;
+  margin-bottom:10px;
+  font-size:1.15rem;
+  font-weight:600;
+  color:var(--accent);
+  border-left:4px solid var(--accent);
+  padding-left:12px;
+  background:rgba(15,111,236,0.05);
+  border-radius:4px;
+  font-family:'Orbitron',system-ui,sans-serif;
+}
+
+/* --- CITAS / BLOCKQUOTES --- */
+blockquote{
+  margin:24px 0;
+  padding:18px 24px;
+  border-left:4px solid var(--accent);
+  background:#ffffff;
+  color:var(--fg);
+  font-style:italic;
+  border-radius:8px;
+  box-shadow:0 1px 3px rgba(0,0,0,0.08);
+  font-family:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+blockquote::before{
+  content:"“";
+  font-size:2.4rem;
+  color:var(--accent);
+  line-height:0;
+  vertical-align:-0.4em;
+  margin-right:4px;
+}
+blockquote::after{
+  content:"”";
+  font-size:2.4rem;
+  color:var(--accent);
+  line-height:0;
+  vertical-align:-0.4em;
+  margin-left:2px;
+}
+
+/* --- FRASE DESTACADA --- */
+.highlight{
+  background:#ffffff;
+  border-left:4px solid var(--accent);
+  padding:14px 18px;
+  font-weight:600;
+  border-radius:6px;
+  margin:24px 0;
+  font-family:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+/* --- PIE DE PÁGINA --- */
+.site-footer{
+  border-top:1px solid var(--border);
+  padding:24px 0;
+  color:var(--muted);
+  font-size:.95rem;
+  text-align:center;
+  font-family:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width:600px){
+  .site-header{ padding:40px 0 20px; }
+  .site-header h1{ font-size:2.1rem; }
+  .toc{ font-size:1rem; }
+  .content h2{ font-size:1.35rem; }
+}
+
+/* --- SemanticOps en Orbitron (peso y presencia en <em>) --- */
+em{
+  font-style:normal;
+  font-weight:700;
+  color:#111;
+  letter-spacing:.6px;
+  font-family:'Orbitron',system-ui,sans-serif;
+}
+
+/* --- ENLACES A CONCEPTOS DEL LEXICON --- */
+.concept-links{
+  list-style:none;
+  margin:8px 0 0 0;
+  padding-left:0;
+}
+.concept-links li{
+  margin-bottom:6px;
+}
+.concept-links a{
+  position:relative;
+  padding-left:16px;
+  color:var(--accent);
+  text-decoration:none;
+}
+.concept-links a::before{
+  content:"▸";
+  position:absolute;
+  left:0;
+  top:2px;
+  font-size:.8rem;
+  color:var(--accent);
+}
+.concept-links a:hover{
+  text-decoration:underline;
+}
