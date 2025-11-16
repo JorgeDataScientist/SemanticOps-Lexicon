@@ -290,3 +290,72 @@ em{
 .concept-links a:hover{
   text-decoration:underline;
 }
+
+
+
+/* TOC numerado desde 0 ya lo maneja el HTML con start="0" */
+
+/* Estilo generales TOC */
+.toc ol {
+  margin-left: 20px;
+}
+
+/* summary principal y subsummary */
+.toc-summary,
+.toc-summary-sub {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* enlaces dentro de summaries en azul SemanticOps */
+.toc-summary a,
+.toc-summary-sub a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.toc-summary a:hover,
+.toc-summary-sub a:hover {
+  text-decoration: underline;
+}
+
+/* ocultar marcador nativo */
+.toc-summary::-webkit-details-marker,
+.toc-summary-sub::-webkit-details-marker {
+  display: none;
+}
+
+/* flechita personalizada */
+.toc-details > .toc-summary::before,
+.toc-details > .toc-summary-sub::before {
+  content: "▸";
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-right: 6px;
+  transition: transform 0.2s ease;
+}
+
+/* rotar flecha al abrir */
+.toc-details[open] > .toc-summary::before,
+.toc-details[open] > .toc-summary-sub::before {
+  transform: rotate(90deg);
+}
+
+/* listas internas */
+.toc-sublevel {
+  margin-top: 6px;
+  margin-left: 18px;
+}
+
+.toc-sub {
+  margin-top: 4px;
+  margin-left: 18px;
+  list-style: none;
+}
+
+.toc-sub li {
+  margin: 2px 0;
+}

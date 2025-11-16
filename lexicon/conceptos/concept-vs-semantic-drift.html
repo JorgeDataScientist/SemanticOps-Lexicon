@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="../assets/logo_2.jpg" />
+    <title>Concept Drift vs. Semantic Drift — SemanticOps Lexicon v1.0</title>
+
+    <meta
+      name="description"
+      content="Entrada oficial del concepto Concept Drift vs. Semantic Drift dentro del SemanticOps Lexicon v1.0."
+    />
+    <meta name="author" content="Jorge Luis García" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+
+  <body>
+
+    <!-- Encabezado del término -->
+    <header class="site-header term-header">
+      <div class="container">
+        <h1>Concept Drift vs. Semantic Drift</h1>
+        <p class="subtitle">Diferencias entre deterioro estadístico y deterioro del significado</p>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="content">
+      <div class="container">
+
+        <!-- Migas de pan -->
+        <nav class="term-breadcrumb">
+          <a href="../index.html">← Volver al SemanticOps Lexicon</a>
+        </nav>
+
+        <article id="term-concept-drift-vs-semantic-drift" class="lexicon-term-card">
+
+          <header class="term-card-header">
+            <div>
+              <h2 class="term-title">Concept Drift vs. Semantic Drift (recontextualización)</h2>
+              <p class="term-subtitle">
+                Distinción operativa entre degradación de datos y degradación del significado.
+              </p>
+            </div>
+
+            <div class="term-meta-badges">
+              <span class="term-badge term-badge-version">v1.0</span>
+              <span class="term-badge term-badge-status">Recontextualizado</span>
+              <span class="term-badge term-badge-category">
+                Concepto estándar recontextualizado
+              </span>
+            </div>
+          </header>
+
+          <div class="term-body">
+
+            <!-- 1. Versión -->
+            <section class="term-section">
+              <h3>1. Versión del término</h3>
+              <p><code>v1.0</code></p>
+            </section>
+
+            <!-- 2. Estado -->
+            <section class="term-section">
+              <h3>2. Estado</h3>
+              <p><strong>Recontextualizado</strong></p>
+            </section>
+
+            <!-- 3. Categoría -->
+            <section class="term-section">
+              <h3>3. Categoría</h3>
+              <p><strong>Concepto estándar recontextualizado dentro de SemanticOps</strong></p>
+            </section>
+
+            <!-- 4. Definición formal -->
+            <section class="term-section">
+              <h3>4. Definición formal</h3>
+              <p>
+                <strong>Concept drift</strong> es el cambio en la distribución estadística de los 
+                datos que afecta el rendimiento de un modelo.  
+              </p>
+              <p>
+                <strong>Semantic drift</strong>, dentro de SemanticOps, es el cambio en el 
+                <em>significado</em> de un concepto, independientemente de los datos, y requiere 
+                intervención en la capa semántica, no solo en modelos o pipelines.
+              </p>
+            </section>
+
+            <!-- 5. Descripción ampliada -->
+            <section class="term-section">
+              <h3>5. Descripción ampliada</h3>
+              <p>
+                Estas dos formas de drift suelen confundirse, pero representan fenómenos 
+                profundamente distintos.  
+                El concept drift se detecta mediante métricas de desempeño del modelo 
+                (precisión, pérdida, error), mientras que el semantic drift se detecta mediante 
+                inconsistencias conceptuales, cambios lingüísticos, alteraciones en reglas de 
+                negocio o divergencias entre burbujas conceptuales.
+              </p>
+              <p>
+                SemanticOps introduce un marco operativo para manejar ambos:  
+                los modelos pueden adaptarse al concept drift, pero el semantic drift requiere 
+                reconstrucción del significado, versionado semántico y gobernanza cognitiva 
+                para restablecer coherencia.
+              </p>
+            </section>
+
+            <!-- 6. Rol dentro de SemanticOps -->
+            <section class="term-section">
+              <h3>6. Rol dentro de SemanticOps</h3>
+              <ul>
+                <li>Diferencia explícita entre deterioro de datos y deterioro de significado.</li>
+                <li>Permite elegir mecanismos de intervención adecuados (modelo vs. concepto).</li>
+                <li>Activa el SemanticOps Loop ante deterioro conceptual.</li>
+                <li>Habilita auditoría semántica basada en versiones de significado utilizadas.</li>
+                <li>Mejora la explicabilidad al separar el contexto técnico del contexto semántico.</li>
+              </ul>
+            </section>
+
+            <!-- 7. Capa asociada -->
+            <section class="term-section">
+              <h3>7. Capa asociada</h3>
+              <ul>
+                <li>Capa cognitiva</li>
+                <li>Capa semántica</li>
+                <li>Capa de aprendizaje (para concept drift)</li>
+              </ul>
+            </section>
+
+            <!-- 8. Relación -->
+            <section class="term-section">
+              <h3>8. Relación con otros términos clave</h3>
+              <ul>
+                <li><strong>Relacionado con:</strong> Drift semántico</li>
+                <li><strong>Detectado mediante:</strong> Embeddings semánticos y observabilidad cognitiva</li>
+                <li><strong>Impacta en:</strong> Coherencia semántica y desempeño de modelos</li>
+                <li><strong>Contrasta con:</strong> ajustes del modelo sin ajuste del significado</li>
+              </ul>
+            </section>
+
+            <!-- 9. Ejemplo -->
+            <section class="term-section">
+              <h3>9. Ejemplo operativo</h3>
+              <p>
+                Un modelo de scoring comienza a fallar porque los datos de “transacciones” cambian su 
+                distribución —eso es <strong>concept drift</strong>.  
+              </p>
+              <p>
+                Meses después, la organización redefine “transacción sospechosa” por nuevas políticas —eso 
+                produce <strong>semantic drift</strong>.  
+              </p>
+              <p>
+                SemanticOps identifica ambos fenómenos por separado y aplica intervenciones técnicas o 
+                semánticas según corresponda.
+              </p>
+            </section>
+
+            <!-- 10. Historial -->
+            <section class="term-section">
+              <h3>10. Historial de cambios del término</h3>
+              <ul>
+                <li>
+                  <strong>v1.0 — 2025-11-14:</strong> incorporación de la distinción formal dentro del 
+                  SemanticOps Lexicon.
+                </li>
+              </ul>
+            </section>
+
+            <!-- 11. Notas -->
+            <section class="term-section">
+              <h3>11. Notas adicionales</h3>
+              <p>
+                SemanticOps introduce esta distinción operativa como un elemento central de la 
+                gobernanza cognitiva y de la explicabilidad basada en significado.
+              </p>
+            </section>
+
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      SemanticOps Lexicon v1.0 — Entrada: Concept Drift vs. Semantic Drift<br />
+      © 2025 SemanticOps — Open Semantic Infrastructure
+    </footer>
+
+  </body>
+</html>

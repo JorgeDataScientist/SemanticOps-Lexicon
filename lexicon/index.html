@@ -122,95 +122,1096 @@
         <!-- Tabla de contenidos -->
         <nav class="toc" aria-label="Tabla de contenidos">
           <strong>Contenido</strong>
-          <ol>
-            <li><a href="#lexicon-proposito">0. Propósito del Lexicon</a></li>
-            <li><a href="#principios">1. Principios Fundamentales</a></li>
-            <li><a href="#terminos">2. Términos del Marco SemanticOps</a></li>
-            <li><a href="#estructura">3. Estructura de Versionado</a></li>
-            <li><a href="#gobernanza">4. Gobernanza del Lexicon</a></li>
-            <li><a href="#contribucion">5. Contribución y Evolución</a></li>
-            <li><a href="#referencias">6. Referencias</a></li>
+          <!-- iniciamos numeración en 0 -->
+          <ol start="0">
+            <li><a href="#lexicon-proposito">Propósito del Lexicon</a></li>
+
+            <li><a href="#principios">Principios Fundamentales</a></li>
+
+            <!-- 2. Términos del Marco SemanticOps -->
+            <li>
+              <details class="toc-details">
+                <summary class="toc-summary">
+                  <a href="#terminos">Términos del Marco SemanticOps</a>
+                </summary>
+
+                <!-- Subniveles: 2.1.1 – 2.1.4 -->
+                <ol class="toc-sublevel">
+                  <!-- 2.1.1 -->
+                  <li>
+                    <details class="toc-details">
+                      <summary class="toc-summary-sub">
+                        <a href="#terminos-2-1-1"
+                          >2.1.1. Conceptos nuevos creados por SemanticOps</a
+                        >
+                      </summary>
+                      <ul class="toc-sub">
+                        <li><a href="#c-semanticops">SemanticOps</a></li>
+                        <li>
+                          <a href="#c-semanticops-loop">SemanticOps Loop</a>
+                        </li>
+                        <li>
+                          <a href="#c-coherencia-semantica-viva"
+                            >Coherencia semántica viva</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-economia-entendimiento"
+                            >Economía del entendimiento</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-infraestructura-cognitiva-viva"
+                            >Infraestructura cognitiva viva</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-mallas-semanticas">Mallas semánticas</a>
+                        </li>
+                        <li>
+                          <a href="#c-metaverso-conceptual"
+                            >Metaverso conceptual</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-observabilidad-cognitiva"
+                            >Observabilidad cognitiva</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-entropia-cognitiva">Entropía cognitiva</a>
+                        </li>
+                        <li>
+                          <a href="#c-deuda-cognitiva">Deuda cognitiva</a>
+                        </li>
+                        <li><a href="#c-semantic-3d">Semantic 3D Space</a></li>
+                        <li>
+                          <a href="#c-burbuja-conceptual">Burbuja conceptual</a>
+                        </li>
+                        <li>
+                          <a href="#c-versionado-semantico"
+                            >Versionado semántico</a
+                          >
+                        </li>
+                        <li><a href="#c-semantic-drift">Semantic Drift</a></li>
+                        <li>
+                          <a href="#c-operar-significado">Operar significado</a>
+                        </li>
+                        <li>
+                          <a href="#c-operar-conocimiento"
+                            >Operar conocimiento</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-infraestructura-semantica"
+                            >Infraestructura semántica continua</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-arquitectura-entendimiento"
+                            >Arquitectura de entendimiento</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-capa-inteligencia-semantica"
+                            >Capa de inteligencia semántica continua</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+
+                  <!-- 2.1.2 -->
+                  <li>
+                    <details class="toc-details">
+                      <summary class="toc-summary-sub">
+                        <a href="#terminos-2-1-2"
+                          >2.1.2. Conceptos existentes ampliados o
+                          redefinidos</a
+                        >
+                      </summary>
+                      <ul class="toc-sub">
+                        <li><a href="#c-knowledgeops">KnowledgeOps</a></li>
+                        <li><a href="#c-semantic-layer">Capa Semántica</a></li>
+                        <li>
+                          <a href="#c-grafo-conocimiento-vivo"
+                            >Grafo de conocimiento vivo</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-alineacion-semantica"
+                            >Alineación semántica automática</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-verificacion-cognitiva"
+                            >Verificación cognitiva humano–IA</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-ontologias-adaptativas"
+                            >Ontologías adaptativas</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-organizational-understanding"
+                            >Organización que entiende</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-gobernanza-semantica"
+                            >Gobernanza semántica automatizada</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-decisiones-trazables"
+                            >Decisiones semánticamente trazables</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-sistemas-que-piensan"
+                            >Sistemas que piensan con sus datos</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-entorno-cognitivo"
+                            >Entorno cognitivo compartido</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+
+                  <!-- 2.1.3 -->
+                  <li>
+                    <details class="toc-details">
+                      <summary class="toc-summary-sub">
+                        <a href="#terminos-2-1-3"
+                          >2.1.3. Conceptos estándar recontextualizados</a
+                        >
+                      </summary>
+                      <ul class="toc-sub">
+                        <li><a href="#c-dataops">DataOps</a></li>
+                        <li><a href="#c-mlops">MLOps</a></li>
+                        <li><a href="#c-devops">DevOps</a></li>
+                        <li><a href="#c-ia-adaptativa">IA adaptativa</a></li>
+                        <li>
+                          <a href="#c-llms-agentes"
+                            >LLMs como agentes semánticos</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-grafos-conocimiento"
+                            >Grafos de conocimiento</a
+                          >
+                        </li>
+                        <li><a href="#c-ontologias">Ontologías</a></li>
+                        <li><a href="#c-taxonomias">Taxonomías</a></li>
+                        <li>
+                          <a href="#c-embeddings">Embeddings semánticos</a>
+                        </li>
+                        <li>
+                          <a href="#c-concept-vs-semantic-drift"
+                            >Concept Drift vs Semantic Drift</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-explicabilidad-semantica"
+                            >Explicabilidad semántica</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+
+                  <!-- 2.1.4 -->
+                  <li>
+                    <details class="toc-details">
+                      <summary class="toc-summary-sub">
+                        <a href="#terminos-2-1-4"
+                          >2.1.4. Conceptos técnicos integrados al marco</a
+                        >
+                      </summary>
+                      <ul class="toc-sub">
+                        <li>
+                          <a href="#c-interoperabilidad"
+                            >Interoperabilidad semántica</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-context-aware">Context-aware systems</a>
+                        </li>
+                        <li>
+                          <a href="#c-reasoning-engines">Reasoning engines</a>
+                        </li>
+                        <li>
+                          <a href="#c-human-in-loop">Human-in-the-loop</a>
+                        </li>
+                        <li>
+                          <a href="#c-ontological-alignment"
+                            >Ontological alignment</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#c-knowledge-versioning"
+                            >Knowledge versioning</a
+                          >
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                </ol>
+              </details>
+            </li>
+
+            <li><a href="#estructura">Estructura de Versionado</a></li>
+            <li><a href="#gobernanza">Gobernanza del Lexicon</a></li>
+            <li><a href="#contribucion">Contribución y Evolución</a></li>
+            <li><a href="#referencias">Referencias</a></li>
           </ol>
         </nav>
 
-        <!-- Sección 0 -->
-        <section id="lexicon-proposito">
-          <h2>0. Propósito del Lexicon</h2>
+        <!---------------------------------- Sección 0 ------------------------------------>
+        <section id="lexicon-proposito" class="lexicon-section">
+          <h2>0. Alcance y Naturaleza del SemanticOps Lexicon v1.0</h2>
+
+          <h3>0.1. Propósito y naturaleza fundacional del Lexicon</h3>
           <p>
-            El Lexicon establece definiciones operativas que permiten alinear
-            conceptos, procesos, modelos y agentes en torno a un lenguaje común
-            y gobernado, reduciendo la ambigüedad semántica en arquitecturas y
-            ecosistemas complejos.
+            El <strong>SemanticOps Lexicon v1.0</strong> constituye la primera
+            versión oficial, abierta y gobernada de la terminología central del
+            marco <em>SemanticOps</em>. Reúne los conceptos fundacionales
+            propuestos inicialmente por <strong>Jorge Luis García</strong>,
+            creador del marco, y establece la base conceptual sobre la cual
+            evolucionará la arquitectura semántica de SemanticOps.
+          </p>
+          <p>
+            Su propósito es ofrecer un lenguaje técnico común para
+            investigadores, ingenieros, organizaciones, desarrolladores y
+            curadores semánticos, habilitando una comprensión consistente y
+            operativa del significado dentro del ecosistema
+            <em>SemanticOps</em>.
+          </p>
+          <p>
+            El Lexicon v1.0 no es un documento definitivo ni exhaustivo: es una
+            <strong>base sólida, gobernada y versionada</strong> diseñada para
+            extenderse progresivamente mediante mecanismos formales de
+            evolución.
+          </p>
+
+          <h3>0.2. Metadatos y estado del documento</h3>
+          <p>
+            Para asegurar trazabilidad y referencia estable, este Lexicon se
+            publica con metadatos explícitos de documento:
+          </p>
+          <ul>
+            <li><strong>Nombre:</strong> SemanticOps Lexicon</li>
+            <li><strong>Versión:</strong> v1.0 (primera versión pública)</li>
+            <li><strong>Estado:</strong> Activo — base fundacional</li>
+            <li><strong>Autor original:</strong> Jorge Luis García</li>
+            <li>
+              <strong>Dominio principal:</strong> Gobernanza del significado en
+              sistemas de datos e IA
+            </li>
+            <li>
+              <strong>Repositorio de referencia:</strong> Lexicon oficial del
+              marco <em>SemanticOps</em>
+            </li>
+          </ul>
+          <p>
+            Versiones posteriores (v1.x, v2.x, etc.) deberán mantener este
+            bloque de metadatos actualizado, preservando la trazabilidad
+            histórica del vocabulario.
+          </p>
+
+          <h3>0.3. Alcance del SemanticOps Lexicon v1.0</h3>
+          <p>
+            El alcance de esta versión se limita a los conceptos necesarios para
+            describir la <strong>capa de significado operado</strong> en el
+            marco <em>SemanticOps</em>. En particular, el Lexicon v1.0:
+          </p>
+          <ul>
+            <li>
+              Define los términos nucleares del marco, su uso recomendado y sus
+              relaciones conceptuales de alto nivel.
+            </li>
+            <li>
+              Establece un vocabulario común para arquitecturas, procesos,
+              modelos y agentes de IA que operen significado bajo
+              <em>SemanticOps</em>.
+            </li>
+            <li>
+              Sirve como referencia para la documentación técnica, el
+              <a
+                href="https://jorgedatascientist.github.io/SemanticOps/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                white paper fundacional
+              </a>
+              y las implementaciones de referencia.
+            </li>
+
+            <li>
+              Proporciona la base para prácticas de
+              <strong>gobernanza semántica</strong> y
+              <strong>observabilidad cognitiva</strong> dentro del ecosistema.
+            </li>
+          </ul>
+
+          <h3>0.4. Exclusiones y no-objetivos</h3>
+          <p>
+            De forma explícita, el SemanticOps Lexicon v1.0
+            <strong>no</strong> pretende:
+          </p>
+          <ul>
+            <li>
+              Definir implementaciones específicas de software, librerías,
+              vendors o arquitecturas físicas.
+            </li>
+            <li>
+              Sustituir normativas legales, regulatorias o estándares externos
+              (por ejemplo, ISO, regulaciones de IA o marcos de ciberseguridad).
+            </li>
+            <li>
+              Actuar como manual operativo detallado de proyectos; su foco es
+              <strong>conceptual y semántico</strong>, no procedimental.
+            </li>
+            <li>
+              Recoger todo el conocimiento posible sobre IA o datos; se centra
+              sólo en el vocabulario relevante para <em>SemanticOps</em>.
+            </li>
+          </ul>
+          <p>
+            Cualquier uso fuera de este alcance debe considerarse como
+            interpretación extendida, no como parte del estándar oficial v1.0.
+          </p>
+
+          <h3>0.5. Modelo de versionado del Lexicon</h3>
+          <p>
+            El SemanticOps Lexicon adopta un esquema de versionado explícito del
+            tipo
+            <strong>mayor.menor.revisión</strong>, alineado con la
+            <a href="#estructura">estructura de versionado</a> descrita en la
+            sección 3:
+          </p>
+          <ul>
+            <li>
+              <strong>Versión mayor (X.0.0):</strong> cambios estructurales del
+              marco, incorporación o eliminación de familias completas de
+              conceptos o redefiniciones profundas que puedan impactar
+              implementaciones existentes.
+            </li>
+            <li>
+              <strong>Versión menor (1.X.0):</strong> incorporación de nuevos
+              términos, matices semánticos o extensiones que mantienen
+              compatibilidad hacia atrás con las definiciones ya publicadas.
+            </li>
+            <li>
+              <strong>Revisión (1.0.X):</strong> correcciones editoriales,
+              ajustes de redacción, ejemplos aclaratorios o mejoras de precisión
+              que no alteran la semántica de fondo.
+            </li>
+          </ul>
+          <p>
+            Este modelo garantiza que la evolución del Lexicon sea
+            <strong>predecible, auditable y operable</strong> por herramientas y
+            procesos automatizados.
+          </p>
+
+          <h3>0.6. Declaración final del alcance</h3>
+          <p>
+            El SemanticOps Lexicon v1.0 es un estándar abierto, versionado
+            públicamente y gobernado por una comunidad comprometida con la
+            calidad conceptual, la coherencia y la responsabilidad semántica.
+          </p>
+          <p>
+            Su propósito no es congelar el lenguaje, sino
+            <strong>operarlo, supervisarlo y expandirlo</strong> de forma
+            técnica, ética y estructurada, habilitando la co-creación del
+            significado entre inteligencia humana e inteligencia artificial.
+          </p>
+          <p>
+            A partir de esta versión fundacional, toda evolución del marco
+            deberá mantener su alineamiento con estos principios de
+            <strong>gobernanza semántica</strong>, trazabilidad y claridad
+            operativa.
           </p>
         </section>
 
+        <!------------------------------------ Sección 1 ------------------------------------>
         <!-- Sección 1 -->
-        <section id="principios">
-          <h2>1. Principios Fundamentales</h2>
+        <section id="principios" class="lexicon-section">
+          <h2>1. Principios Rectores de SemanticOps</h2>
           <p>
-            <em>SemanticOps</em> se fundamenta en la automatización,
-            trazabilidad y gobernanza del significado, habilitando un “sistema
-            operativo del significado” interoperable entre personas, sistemas y
-            agentes de IA.
+            Estos principios establecen la base ética, técnica y operativa del
+            marco
+            <strong>SemanticOps</strong>. No constituyen un listado cerrado,
+            sino un conjunto de fundamentos que garantizan que el significado
+            sea tratado como un activo crítico, gobernado y co-creado por
+            humanos e inteligencia artificial bajo supervisión responsable.
           </p>
+
+          <ol>
+            <li>
+              <strong>El significado debe ser gobernado, no improvisado.</strong
+              ><br />
+              La semántica se administra con método, rigor y responsabilidad,
+              nunca por accidente.
+            </li>
+
+            <li>
+              <strong
+                >Ningún concepto existe sin trazabilidad, versión y
+                justificación.</strong
+              ><br />
+              Todo término debe tener historia, razones y evidencia para su
+              existencia y evolución.
+            </li>
+
+            <li>
+              <strong
+                >El conocimiento es un organismo vivo y su evolución debe ser
+                explícita, controlada y documentada.</strong
+              ><br />
+              Cada cambio semántico debe quedar registrado y explicado.
+            </li>
+
+            <li>
+              <strong
+                >Humanos e inteligencia artificial co-crean el entendimiento,
+                pero la validación final siempre recae en criterio
+                humano.</strong
+              ><br />
+              La IA asiste y propone, pero no legisla significado sin
+              supervisión humana.
+            </li>
+
+            <li>
+              <strong
+                >Un concepto no es válido si no puede ser comprendido tanto por
+                humanos como por máquinas.</strong
+              ><br />
+              SemanticOps exige semántica interoperable a nivel cognitivo en
+              ambos planos.
+            </li>
+
+            <li>
+              <strong>La comunidad es guardiana activa del marco.</strong><br />
+              El Lexicon evoluciona gracias a la participación abierta y
+              responsable.
+            </li>
+
+            <li>
+              <strong
+                >Los curadores semánticos preservan la coherencia del lenguaje
+                común.</strong
+              ><br />
+              Evalúan propuestas y protegen la integridad conceptual del marco.
+            </li>
+
+            <li>
+              <strong
+                >Las definiciones deben servir al entendimiento operativo, no a
+                la ambigüedad conceptual.</strong
+              ><br />
+              Cada término debe aportar claridad y resolver problemas reales.
+            </li>
+
+            <li>
+              <strong
+                >Todo concepto debe estar alineado con su dominio, su contexto y
+                su intención.</strong
+              ><br />
+              El significado no se separa de la realidad que describe.
+            </li>
+
+            <li>
+              <strong>La explicabilidad no es opcional.</strong><br />
+              Cada decisión debe poder explicarse desde la semántica que la
+              fundamenta.
+            </li>
+
+            <li>
+              <strong>La semántica debe unificar, no fragmentar.</strong><br />
+              Un concepto compartido debe evitar múltiples interpretaciones
+              paralelas sin justificación formal.
+            </li>
+
+            <li>
+              <strong
+                >La IA debe detectar inconsistencias, pero nunca imponer
+                definiciones.</strong
+              ><br />
+              Su rol es revelar patrones, no reemplazar la gobernanza humana.
+            </li>
+
+            <li>
+              <strong
+                >Todo concepto nuevo debe demostrar necesidad, utilidad y
+                coherencia.</strong
+              ><br />
+              La expansión del Lexicon debe responder a propósito, no a moda.
+            </li>
+
+            <li>
+              <strong
+                >La evolución semántica siempre debe mejorar la claridad, nunca
+                sacrificarla.</strong
+              ><br />
+              Ninguna actualización debe aumentar la ambigüedad.
+            </li>
+
+            <li>
+              <strong
+                >La comunidad debe impulsar, no frenar, la aparición de nuevos
+                conceptos.</strong
+              ><br />
+              A mayor conocimiento, mayores distinciones; a mayores
+              distinciones, mayor precisión operativa.
+            </li>
+
+            <li>
+              <strong
+                >El Lexicon es un estándar abierto: su fuerza proviene de su
+                transparencia.</strong
+              ><br />
+              Cada debate, cambio y versión debe ser visible y justificable ante
+              la comunidad.
+            </li>
+          </ol>
         </section>
 
+        <!------------------------------------ Sección 2 ------------------------------------>
         <!-- Sección 2 -->
-        <section id="terminos">
+        <section id="terminos" class="lexicon-section">
           <h2>2. Términos del Marco SemanticOps</h2>
+
           <p>
-            Este apartado agrupa las definiciones oficiales del marco. Cada
-            término cuenta con versión, notas de uso, dependencias y posibles
-            equivalencias en otros marcos conceptuales.
+            Esta sección presenta el
+            <strong
+              >inventario oficial de conceptos del SemanticOps Lexicon
+              v1.0</strong
+            >. Cada término contará con su propia entrada versionada en la
+            carpeta
+            <a
+              href="https://github.com/JorgeDataScientist/SemanticOps-Lexicon/tree/main/lexicon/conceptos"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><code>/conceptos</code></a
+            >, incluyendo definición formal, notas de uso, dependencias y
+            trazabilidad.
           </p>
 
+          <p>
+            Los conceptos se agrupan según su origen: nuevos términos creados
+            por SemanticOps, términos existentes ampliados, conceptos estándar
+            recontextualizados y elementos técnicos integrados al marco.
+          </p>
+
+          <!-- 2.1.1 Nuevos conceptos creados por SemanticOps -->
+          <h3 id="terminos-2-1-1">
+            2.1.1. Conceptos nuevos creados por SemanticOps
+          </h3>
           <ul class="concept-links">
             <li><a href="conceptos/semanticops.html">SemanticOps</a></li>
-            <li><a href="conceptos/semanticops-loop.html">SemanticOps Loop</a></li>
-            <li><a href="conceptos/mallas-semanticas.html">Mallas Semánticas</a></li>
+            <li>
+              <a href="conceptos/semanticops-loop.html">SemanticOps Loop</a>
+            </li>
+            <li>
+              <a href="conceptos/coherencia-semantica-viva.html"
+                >Coherencia semántica viva</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/economia-del-entendimiento.html"
+                >Economía del entendimiento</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/infraestructura-cognitiva-viva.html"
+                >Infraestructura cognitiva viva</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/mallas-semanticas.html">Mallas semánticas</a>
+            </li>
+            <li>
+              <a href="conceptos/metaverso-conceptual.html"
+                >Metaverso conceptual</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/observabilidad-cognitiva.html"
+                >Observabilidad cognitiva</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/entropia-cognitiva.html">Entropía cognitiva</a>
+            </li>
+            <li>
+              <a href="conceptos/deuda-cognitiva.html">Deuda cognitiva</a>
+            </li>
+            <li>
+              <a href="conceptos/semantic-3d-space.html"
+                >Espacio tridimensional del significado</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/burbuja-conceptual.html">Burbuja conceptual</a>
+            </li>
+            <li>
+              <a href="conceptos/versionado-semantico.html"
+                >Versionado semántico de conceptos</a
+              >
+            </li>
+            <li><a href="conceptos/semantic-drift.html">Semantic Drift</a></li>
+            <li>
+              <a href="conceptos/operar-significado.html">Operar significado</a>
+            </li>
+            <li>
+              <a href="conceptos/operar-conocimiento.html"
+                >Operar conocimiento</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/infraestructura-semantica-continua.html"
+                >Infraestructura semántica continua</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/arquitectura-de-entendimiento.html"
+                >Arquitectura de entendimiento</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/capa-inteligencia-semantica-continua.html"
+                >Capa de inteligencia semántica continua</a
+              >
+            </li>
+          </ul>
+
+          <!-- 2.1.2 Conceptos existentes ampliados o redefinidos -->
+          <h3 id="terminos-2-1-2">
+            2.1.2. Conceptos existentes ampliados o redefinidos
+          </h3>
+          <ul class="concept-links">
+            <li>
+              <a href="conceptos/knowledgeops.html"
+                >KnowledgeOps (reinterpretado)</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/semantic-layer.html"
+                >Capa semántica (Semantic Layer)</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/grafo-conocimiento-vivo.html"
+                >Grafo de conocimiento vivo</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/alineacion-semantica-automatica.html"
+                >Alineación semántica automática</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/verificacion-cognitiva.html"
+                >Verificación cognitiva humano–IA</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/ontologias-adaptativas.html"
+                >Ontologías adaptativas</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/organizational-understanding.html"
+                >Organización que entiende</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/gobernanza-semantica-automatizada.html"
+                >Gobernanza semántica automatizada</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/decisiones-trazables.html"
+                >Decisiones semánticamente trazables</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/sistemas-que-piensan.html"
+                >Sistemas que piensan con sus datos</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/entorno-cognitivo-compartido.html"
+                >Entorno cognitivo compartido</a
+              >
+            </li>
+          </ul>
+
+          <!-- 2.1.3 Conceptos estándar recontextualizados -->
+          <h3 id="terminos-2-1-3">
+            2.1.3. Conceptos estándar recontextualizados
+          </h3>
+          <ul class="concept-links">
+            <li><a href="conceptos/dataops.html">DataOps</a></li>
+            <li><a href="conceptos/mlops.html">MLOps</a></li>
+            <li><a href="conceptos/devops.html">DevOps</a></li>
+            <li><a href="conceptos/ia-adaptativa.html">IA adaptativa</a></li>
+            <li>
+              <a href="conceptos/llms-como-agentes-semanticos.html"
+                >LLMs como agentes semánticos</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/grafos-de-conocimiento.html"
+                >Grafos de conocimiento</a
+              >
+            </li>
+            <li><a href="conceptos/ontologias.html">Ontologías</a></li>
+            <li><a href="conceptos/taxonomias.html">Taxonomías</a></li>
+            <li>
+              <a href="conceptos/embeddings-semanticos.html"
+                >Embeddings semánticos</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/concept-vs-semantic-drift.html"
+                >Concept Drift vs Semantic Drift</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/explicabilidad-semantica.html"
+                >Explicabilidad semántica</a
+              >
+            </li>
+          </ul>
+
+          <!-- 2.1.4 Conceptos técnicos integrados al marco -->
+          <h3 id="terminos-2-1-4">
+            2.1.4. Conceptos técnicos integrados al marco
+          </h3>
+          <ul class="concept-links">
+            <li>
+              <a href="conceptos/interoperabilidad-semantica.html"
+                >Interoperabilidad semántica</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/context-aware-systems.html"
+                >Context-aware systems</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/reasoning-engines.html">Reasoning engines</a>
+            </li>
+            <li>
+              <a href="conceptos/human-in-the-loop.html"
+                >Human-in-the-loop (semántica)</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/ontological-alignment.html"
+                >Ontological alignment</a
+              >
+            </li>
+            <li>
+              <a href="conceptos/knowledge-versioning.html"
+                >Knowledge versioning</a
+              >
+            </li>
           </ul>
         </section>
 
-        <!-- Sección 3 -->
-        <section id="estructura">
-          <h2>3. Estructura de Versionado</h2>
+        <!------------------------------------ Sección 3 ------------------------------------>
+        <section id="estructura" class="lexicon-section">
+          <h2>3. Estructura de Versionado Operativo</h2>
+
           <p>
-            El Lexicon adopta un esquema de versionado explícito (por ejemplo,
-            mayor.menor.revisión) que permite introducir cambios incrementales
-            sin romper la compatibilidad con modelos, pipelines o grafos que
-            dependan de definiciones previas.
+            El <strong>SemanticOps Lexicon</strong> emplea un sistema de
+            versionado estructural basado en el esquema
+            <code>mayor.menor.revisión</code>. Mientras la Sección 0 establece
+            la naturaleza conceptual del versionado, esta sección define su
+            <strong>uso operativo</strong> dentro de arquitecturas, pipelines y
+            sistemas cognitivos que dependen del vocabulario oficial.
+          </p>
+
+          <h3>3.1. Niveles de versión y su impacto operativo</h3>
+          <p>
+            Cada nivel del esquema de versión tiene una función específica
+            dentro del ecosistema SemanticOps. Su propósito es garantizar que
+            cualquier cambio en el significado sea rastreable, justificable y
+            compatible con los sistemas que consumen el Lexicon.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Versión mayor (X.0.0)</strong><br />
+              Representa cambios estructurales significativos: nueva taxonomía
+              central, redefinición profunda de conceptos esenciales,
+              eliminación de términos o alteraciones que pueden afectar
+              compatibilidad semántica. Su adopción implica proceso de
+              gobernanza ampliado y comunicación formal.
+            </li>
+
+            <li>
+              <strong>Versión menor (0.Y.0)</strong><br />
+              Introduce extensiones compatibles hacia atrás: nuevos conceptos,
+              ajustes moderados, ampliación de ejemplos, precisiones semánticas
+              y evolución natural del marco sin alterar su arquitectura base.
+            </li>
+
+            <li>
+              <strong>Revisión (0.0.Z)</strong><br />
+              Se limita a correcciones editoriales, mejoras de claridad,
+              referencias, alineamientos cosméticos o metadatos. No cambia el
+              significado operativo de ningún término ni su interferencia con
+              sistemas dependientes.
+            </li>
+          </ul>
+
+          <h3>
+            3.2. Relación entre la versión global y la versión por concepto
+          </h3>
+          <p>El Lexicon opera con un sistema de doble versionado:</p>
+
+          <ul>
+            <li>
+              <strong>Versión global del Lexicon</strong><br />
+              Refleja el estado consolidado de todo el vocabulario (ej.
+              <code>SemanticOps Lexicon v1.0</code>). Actúa como "checkpoint"
+              oficial y punto de referencia estable para integraciones externas.
+            </li>
+
+            <li>
+              <strong>Versión individual por concepto</strong><br />
+              Cada término mantiene su propio metadato de versión, permitiendo
+              rastrear cambios finos sin necesidad de alterar la versión global.
+            </li>
+
+            <li>
+              <strong>Relación entre ambas</strong><br />
+              La versión global garantiza coherencia; las versiones por concepto
+              habilitan precisión. En conjunto permiten auditoría semántica
+              granular y control total sobre la evolución del significado.
+            </li>
+          </ul>
+
+          <h3>
+            3.3. Versionado en repositorio, trazabilidad y snapshots cognitivos
+          </h3>
+          <p>
+            Cada actualización del Lexicon —global o específica de conceptos—
+            debe quedar reflejada en el repositorio mediante etiquetas
+            estructuradas, por ejemplo:
+            <code>tag: lexicon-v1.0.0</code>.
+          </p>
+
+          <p>Esto garantiza que los sistemas dependientes puedan:</p>
+
+          <ul>
+            <li>
+              <strong>Fijar versiones estables</strong> en pipelines, modelos,
+              ontologías o servicios semánticos.
+            </li>
+            <li>
+              <strong>Realizar diff semántico</strong> entre versiones para
+              evaluar cambios en definiciones, relaciones o estados.
+            </li>
+            <li>
+              <strong>Restaurar snapshots cognitivos</strong> que representen el
+              estado exacto de significado en un punto del tiempo.
+            </li>
+          </ul>
+
+          <p>
+            Este mecanismo convierte al Lexicon en una infraestructura trazable,
+            verificable y alineada con los principios de gobernanza de
+            <strong>SemanticOps</strong>.
           </p>
         </section>
 
-        <!-- Sección 4 -->
-        <section id="gobernanza">
+        <!------------------------------------ Sección 4 ------------------------------------>
+        <section id="gobernanza" class="lexicon-section">
           <h2>4. Gobernanza del Lexicon</h2>
+
           <p>
-            La gobernanza define roles, procesos de revisión y criterios de
-            aceptación de cambios, garantizando la coherencia interna del
-            vocabulario y su alineación con los principios de
-            <em>SemanticOps</em>.
+            La gobernanza del <strong>SemanticOps Lexicon</strong> establece
+            cómo se toman decisiones sobre el significado: quién propone, quién
+            revisa, quién aprueba y cómo se documenta cada cambio. Su objetivo
+            es preservar coherencia, trazabilidad y alineamiento con los
+            principios de <em>SemanticOps</em>.
           </p>
+
+          <h3>4.1. Roles de gobernanza</h3>
+          <ul>
+            <li>
+              <strong>Comunidad contribuidora</strong><br />
+              Usuarios, organizaciones y equipos que detectan necesidades
+              semánticas, proponen nuevos conceptos, reportan inconsistencias o
+              sugieren mejoras a definiciones existentes.
+            </li>
+            <li>
+              <strong>Curadores semánticos</strong><br />
+              Responsables de evaluar propuestas, contrastarlas con el marco
+              conceptual de <em>SemanticOps</em>, asegurar consistencia
+              terminológica y coordinar revisiones con expertos de dominio.
+            </li>
+            <li>
+              <strong>Comité de gobernanza</strong><br />
+              Instancia que toma decisiones finales sobre cambios críticos
+              (nuevas familias de conceptos, redefiniciones profundas, cambios
+              de versión mayor) y vela por la alineación ética y técnica del
+              Lexicon.
+            </li>
+          </ul>
+
+          <h3>4.2. Flujo de decisiones</h3>
+          <ol>
+            <li>
+              <strong>Propuesta:</strong> creación de un issue o solicitud
+              formal.
+            </li>
+            <li>
+              <strong>Revisión:</strong> análisis por curadores, discusión y
+              ajustes con la comunidad.
+            </li>
+            <li>
+              <strong>Decisión:</strong> aprobación, rechazo o solicitud de
+              cambios adicionales por parte del comité.
+            </li>
+            <li>
+              <strong>Publicación:</strong> actualización del Lexicon, versión
+              correspondiente y registro de la decisión en el historial.
+            </li>
+          </ol>
+
+          <h3>4.3. Criterios de aceptación</h3>
+          <p>
+            Todo cambio debe demostrar
+            <strong>necesidad, coherencia y utilidad operativa</strong>. Se
+            evaluará:
+          </p>
+          <ul>
+            <li>Claridad del concepto y ausencia de ambigüedad innecesaria.</li>
+            <li>
+              Alineación con la filosofía de <em>SemanticOps</em> y sus
+              principios rectores.
+            </li>
+            <li>
+              Impacto en modelos, grafos, agentes y procesos que ya dependen de
+              la definición.
+            </li>
+          </ul>
         </section>
 
-        <!-- Sección 5 -->
-        <section id="contribucion">
+        <!------------------------------------ Sección 5 ------------------------------------>
+        <section id="contribucion" class="lexicon-section">
           <h2>5. Contribución y Evolución</h2>
+
           <p>
-            El Lexicon es un estándar abierto. La comunidad puede proponer
-            nuevos conceptos, revisiones semánticas o reportes de
-            desalineamiento mediante los flujos formales definidos en el
-            repositorio (por ejemplo, plantillas de issues en GitHub).
+            El <strong>SemanticOps Lexicon</strong> está diseñado como un
+            estándar abierto y evolutivo. Su fortaleza proviene de la
+            participación activa de la comunidad: practicantes, organizaciones,
+            investigadores y equipos de ingeniería que operan significado en
+            entornos reales.
+          </p>
+
+          <h3>5.1. Canales de contribución</h3>
+          <ul>
+            <li>
+              Creación de <strong>issues</strong> para proponer nuevos
+              conceptos, matices o correcciones.
+            </li>
+            <li>
+              Envío de <strong>pull requests</strong> con definiciones
+              sugeridas, ejemplos y notas de uso.
+            </li>
+            <li>
+              Reporte de <strong>desalineamientos semánticos</strong> detectados
+              en implementaciones (modelos, grafos, agentes, documentación).
+            </li>
+          </ul>
+
+          <h3>5.2. Buenas prácticas para contribuyentes</h3>
+          <ul>
+            <li>
+              Explicar el problema que el nuevo concepto o cambio pretende
+              resolver.
+            </li>
+            <li>
+              Indicar posibles impactos en terminología existente o en la
+              comprensión del marco.
+            </li>
+            <li>
+              Proponer ejemplos de uso operativos (casos de negocio, flujos de
+              IA, arquitecturas).
+            </li>
+            <li>
+              Referenciar fuentes, estándares o marcos relacionados cuando
+              aplique.
+            </li>
+          </ul>
+
+          <h3>5.3. Evolución controlada</h3>
+          <p>
+            Toda evolución del Lexicon busca aumentar la precisión y capacidad
+            operativa del lenguaje, no su complejidad arbitraria. La expansión
+            del vocabulario se considera una inversión en
+            <strong>inteligencia compartida</strong>, siempre que esté
+            <strong>justificada, trazable y gobernada</strong>.
           </p>
         </section>
 
-        <!-- Sección 6 -->
-        <section id="referencias">
+        <!------------------------------------ Sección 6 ------------------------------------>
+        <section id="referencias" class="lexicon-section">
           <h2>6. Referencias</h2>
+
           <p>
-            Este apartado reúne documentación complementaria, incluyendo el
-            white paper fundacional de <em>SemanticOps</em>, materiales técnicos
-            y enlaces a implementaciones de referencia.
+            Este apartado reúne documentación complementaria y materiales de
+            referencia que contextualizan el
+            <strong>SemanticOps Lexicon</strong> dentro del ecosistema más
+            amplio de ingeniería de datos, IA y semántica aplicada.
+          </p>
+
+          <ul>
+            <li>
+              <strong>White paper fundacional de SemanticOps</strong><br />
+              Documento base que describe el marco, su filosofía y la
+              arquitectura de entendimiento sobre la que se apoya el Lexicon.
+            </li>
+            <li>
+              <strong>Sitio oficial de SemanticOps</strong><br />
+              Recopila artículos, actualizaciones y recursos asociados al marco:
+              <a
+                href="https://jorgedatascientist.github.io/SemanticOps"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SemanticOps — El manifiesto del conocimiento operativo </a
+              >.
+            </li>
+            <li>
+              <strong>Repositorio del SemanticOps Lexicon</strong><br />
+              Código fuente, estructura de carpetas (<code>/conceptos</code>,
+              <code>/docs</code>), issues abiertos y versión vigente del
+              estándar.
+            </li>
+            <li>
+              <strong>Estándares y marcos relacionados</strong><br />
+              Ontologías, especificaciones de grafos de conocimiento y marcos de
+              gobernanza de IA que sirven como base comparativa (por ejemplo,
+              W3C, iniciativas de AI governance y estándares de datos abiertos).
+            </li>
+          </ul>
+
+          <p>
+            A medida que el Lexicon evolucione, esta sección se actualizará con
+            nuevas referencias, implementaciones de ejemplo y casos de uso que
+            demuestren cómo <em>operar significado</em> en entornos reales.
           </p>
         </section>
       </div>
@@ -221,7 +1222,7 @@
       © 2025 SemanticOps — Open Semantic Infrastructure
     </footer>
 
-    <!-- Lógica básica del selector de idioma -->
+    <!------------------------------------ Lógica básica del selector de idioma ------------------------------------>
     <script>
       (function () {
         const btn = document.getElementById("langBtn");
@@ -249,6 +1250,12 @@
 
         document.addEventListener("click", function () {
           menu.classList.remove("visible");
+        });
+
+        // Abrir en nueva pestaña todos los conceptos del Lexicon
+        document.querySelectorAll(".concept-links a").forEach(function (link) {
+          link.setAttribute("target", "_blank");
+          link.setAttribute("rel", "noopener noreferrer");
         });
       })();
     </script>
