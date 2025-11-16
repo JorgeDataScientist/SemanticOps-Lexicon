@@ -77,8 +77,8 @@ Diseñadas para ayudarte a enviar propuestas estructuradas y coherentes.
 
 El Lexicon se publica en formato web en:
 
-➡️ **[SemanticOps Lexicon v1.0 – Sitio Oficial](https://tu-dominio-aqui.com/lexicon)**  
-*(Reemplaza con tu URL real)*
+➡️ **[SemanticOps Lexicon v1.0 – Sitio Oficial](https://jorgedatascientist.github.io/SemanticOps-Lexicon/)**  
+
 
 Esta web actúa como **documento maestro**, mientras que GitHub es la fuente de verdad para:  
 - versión,  
@@ -135,8 +135,8 @@ SemanticOps es el marco operativo que define cómo:
 
 Para más información consulta el documento fundacional:
 
-➡️ *“SemanticOps — El Manifiesto del Conocimiento Operativo en la Era de la IA”*  
-*(Coloca aquí el link a tu PDF / web oficial)*
+➡️ **[“SemanticOps — El Manifiesto del Conocimiento Operativo en la Era de la IA”](https://jorgedatascientist.github.io/SemanticOps/)**
+
 
 ---
 
