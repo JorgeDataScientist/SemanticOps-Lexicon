@@ -1,61 +1,56 @@
-# [SemanticOps Lexicon v1.0](https://jorgedatascientist.github.io/SemanticOps-Lexicon/)
+# <a href="https://jorgedatascientist.github.io/SemanticOps-Lexicon/" target="_blank">SemanticOps Lexicon v1.0</a>
 ### Terminología oficial del significado gobernado
 
-Bienvenido al repositorio oficial del **[SemanticOps Lexicon v1.0](https://jorgedatascientist.github.io/SemanticOps-Lexicon/)**, 
-la primera versión pública, abierta y gobernada del conjunto de conceptos que definen el marco **[SemanticOps](https://jorgedatascientist.github.io/SemanticOps/)**.
+Bienvenido al repositorio oficial del 
+<strong><a href="https://jorgedatascientist.github.io/SemanticOps-Lexicon/" target="_blank">SemanticOps Lexicon v1.0</a></strong>, 
+la primera versión pública, abierta y gobernada del conjunto de conceptos que definen el marco 
+<strong><a href="https://jorgedatascientist.github.io/SemanticOps/" target="_blank">SemanticOps</a></strong>.
 
-[SemanticOps](https://jorgedatascientist.github.io/SemanticOps/) es un nuevo paradigma operativo centrado en 
-**gobernar, versionar y automatizar el significado** dentro de organizaciones, sistemas e inteligencias artificiales.  
-Este repositorio contiene la versión viva del Lexicon: el punto de referencia para la definición formal de todos los términos del marco.
+<a href="https://jorgedatascientist.github.io/SemanticOps/" target="_blank">SemanticOps</a> 
+es un nuevo paradigma operativo centrado en <strong>gobernar, versionar y automatizar el significado</strong>.  
+Este repositorio contiene la versión viva del Lexicon.
 
 ---
 
 ## 📘 ¿Qué es el SemanticOps Lexicon?
 
-El **[SemanticOps Lexicon](https://jorgedatascientist.github.io/SemanticOps-Lexicon/)** es:
+El 
+<strong><a href="https://jorgedatascientist.github.io/SemanticOps-Lexicon/" target="_blank">
+SemanticOps Lexicon
+</a></strong> es:
 
-- Un **estándar abierto** que define el lenguaje oficial del marco **SemanticOps**.  
-- Un **conjunto de conceptos versionados** con trazabilidad completa.  
-- Un **documento vivo**, sujeto a evolución comunitaria y gobernanza formal.  
-- Una **infraestructura pública del significado**, creada para ser utilizada por personas, organizaciones y sistemas de IA.
+- Un estándar abierto  
+- Un conjunto de conceptos versionados  
+- Un documento semántico vivo  
+- Una infraestructura pública del significado  
 
-Este Lexicon fue iniciado por **Jorge Luis García**, creador del marco **SemanticOps**, y evoluciona mediante participación responsable de la comunidad.
+Iniciado por **Jorge Luis García**, creador del marco 
+<strong><a href="https://jorgedatascientist.github.io/SemanticOps/" target="_blank">SemanticOps</a></strong>.
 
 ---
 
-## 🧭 Principio rector del marco
+## 🧭 Principio rector
 
 > **El significado debe ser gobernado, no improvisado.**
-
-Este repositorio es la materialización operativa de ese principio.
 
 ---
 
 ## 🔍 Estructura del repositorio
 
-(Agrega aquí la estructura cuando esté completa.)
+(Completa esta sección con tu estructura real.)
 
 ---
 
 ## 🧠 ¿Cómo puedo contribuir?
 
-La evolución del Lexicon sigue un ciclo de gobernanza responsable:
+La evolución del Lexicon sigue un ciclo de gobernanza:
 
-1. **La comunidad propone**  
-2. **Los curadores semánticos evalúan**  
-3. **El comité de gobernanza aprueba o rechaza**  
-4. **La comunidad ejecuta la actualización**
+1. La comunidad propone  
+2. Los curadores semánticos evalúan  
+3. El comité de gobernanza aprueba o rechaza  
+4. La comunidad ejecuta  
 
-Puedes contribuir de varias formas:
-
-- Proponer nuevos conceptos  
-- Sugerir mejoras a definiciones existentes  
-- Reportar drift semántico  
-- Proponer ejemplos operativos  
-- Revisar traducciones  
-- Participar en discusiones técnicas  
-
-Consulta el archivo **CONTRIBUTING.md** para ver los requisitos formales.
+Consulta el archivo **CONTRIBUTING.md**.
 
 ---
 
@@ -67,78 +62,61 @@ En `/ISSUE_TEMPLATE/` encontrarás:
 - `semantic_revision_template.md`  
 - `semantic_drift_report.md`  
 
-Estas plantillas garantizan que cada contribución sea estructurada y coherente.
-
 ---
 
 ## 🌐 Versión oficial del Lexicon
 
-El Lexicon se publica en formato web en:
+Disponible online:
 
-➡️ **https://jorgedatascientist.github.io/SemanticOps-Lexicon/**
-
-Esta web actúa como **documento maestro**, mientras que GitHub es la fuente de verdad para:  
-- la versión actual  
-- la trazabilidad  
-- la gobernanza  
-- el historial de cambios  
-- las propuestas de la comunidad
+➡️ <a href="https://jorgedatascientist.github.io/SemanticOps-Lexicon/" target="_blank">
+SemanticOps Lexicon — Sitio Oficial
+</a>
 
 ---
 
 ## 🔄 Versionado
 
-Las versiones siguen el esquema:
+- v1.0 — Fundacional  
+- v1.1 — Ajustes menores  
+- v2.0 — Evolución mayor  
 
-- **v1.0** → Versión fundacional  
-- **v1.1 / v1.2** → Ajustes menores, nuevos términos, refinamientos  
-- **v2.0** → Cambios conceptuales mayores o reorganización estructural  
-
-El historial completo se encuentra en **VERSIONS.md**.
+Historial completo: **VERSIONS.md**
 
 ---
 
 ## 🤝 Código de Conducta
 
-Toda interacción debe seguir el **CODE_OF_CONDUCT.md**.  
-La construcción del significado exige profesionalismo, rigor y ética.
+Toda interacción debe seguir: **CODE_OF_CONDUCT.md**
 
 ---
 
 ## 👥 Curadores Semánticos
 
-Los curadores semánticos son los guardianes del significado dentro del marco.  
-Son seleccionados por la comunidad con base en:
-
-- ética,  
-- rigor conceptual,  
-- experiencia técnica,  
-- razonamiento semántico,  
-- compromiso con la coherencia del Lexicon.
+Garantizan la coherencia conceptual y la calidad del marco.
 
 ---
 
 ## 🧩 ¿Qué es SemanticOps?
 
-**[SemanticOps](https://jorgedatascientist.github.io/SemanticOps/)** es el marco operativo que define cómo:
+<strong><a href="https://jorgedatascientist.github.io/SemanticOps/" target="_blank">SemanticOps</a></strong> 
+define cómo:
 
-- **gobernar significado**,  
-- **versionar conocimiento**,  
-- **mantener coherencia semántica viva**,  
-- **integrar inteligencia humana e inteligencia artificial**,  
-- y **operar el entendimiento como infraestructura**.
+- gobernar significado  
+- versionar conocimiento  
+- mantener coherencia semántica viva  
+- integrar IA + humanos  
+- operar el entendimiento como infraestructura  
 
-Para más información consulta el documento fundacional:
+Para más información, consulta:
 
-➡️ **[“SemanticOps — El Manifiesto del Conocimiento Operativo en la Era de la IA”](https://jorgedatascientist.github.io/SemanticOps/)**
+➡️ <a href="https://jorgedatascientist.github.io/SemanticOps/" target="_blank">
+“SemanticOps — El Manifiesto del Conocimiento Operativo en la Era de la IA”
+</a>
 
 ---
 
 ## 🙌 Agradecimiento
 
-Gracias por ser parte de esta comunidad.  
-El **SemanticOps Lexicon** solo puede existir si la comunidad participa activamente, propone, refina 
-y gobierna el significado con responsabilidad y visión.
-
-Tu contribución ayuda a construir la próxima capa operativa de la inteligencia.
+Gracias por ser parte de la comunidad.  
+El **SemanticOps Lexicon** evoluciona gracias a tu participación.
 
